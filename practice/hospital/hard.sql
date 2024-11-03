@@ -101,6 +101,7 @@ gender ='F' and
 weight between 60 and 80 and
 patient_id%2!=0 and
 city like "Kingston"
+-- instead of % we can also use MOD(patient_id, 2) != 0;
 
 -- Show the percent of patients that have 'M' as their gender. Round the answer to the nearest hundreth number and in percent form.
 SELECT 

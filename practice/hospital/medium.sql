@@ -80,6 +80,7 @@ specialty	TEXT
 SELECT first_name, last_name, 'Patient' as role FROM patients
     union all
 select first_name, last_name, 'Doctor' from doctors;
+-- union doesn't allow duplicate values, union all does.
 
 -- Show all allergies ordered by popularity. Remove NULL values from query.
 select allergies, count(allergies) as Total_Diagnosis from patients
